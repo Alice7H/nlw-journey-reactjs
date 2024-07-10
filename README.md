@@ -33,7 +33,7 @@ export default {
 
 NLW Journey Frontend project - ReactJS by Rocketseat
 
-### Class 1
+### Aula 1
 
 - Configurações iniciais
   - Google Fonts: Inter
@@ -45,7 +45,7 @@ NLW Journey Frontend project - ReactJS by Rocketseat
   - Layout para registrar convidados
 - Hook: useState
 
-### Class 2
+### Aula 2
 
 - Refatoração do projeto
   - Criação da página de viagem
@@ -65,3 +65,10 @@ NLW Journey Frontend project - ReactJS by Rocketseat
 - Componentes
   - Button
 - Instalação do tailwind-variants
+
+### Aula 3
+
+- Cópia do projeto backend nodejs do GitHub
+- Atualização da versão do nodejs
+- Instalação de dependências `npm install`
+- Inicialização do @prisma/client `npx prisma generate`
