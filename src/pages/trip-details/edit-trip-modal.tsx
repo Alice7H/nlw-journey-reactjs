@@ -5,6 +5,7 @@ import { DateRange, DayPicker } from "react-day-picker";
 import { useParams } from "react-router-dom";
 import { Button } from "../../components/button";
 import { api } from "../../lib/axios";
+import { LabelInput } from "../../components/label-input";
 
 interface EditTripModalProps {
   closeEditTripModal: () => void;
@@ -44,22 +45,22 @@ export function EditTripModal({closeEditTripModal}: EditTripModalProps) {
             </button>
           </div>
 
-          <div className="h-14 px-4 bg-zinc-950 border border-zinc-800 rounded-lg flex items-center gap-2">
-            <MapPin className="size-5 text-zinc-400" />
-            <label htmlFor="travel-location" className="sr-only">Para onde você vai?</label>
-            <input type="text" name="travel-location" id="travel-location" placeholder="Para onde você vai?" className="bg-transparent text-lg placeholder-zinc-400 outline-none flex-1"
-              onChange={event => setDestination(event.target.value)}
-              value={destination}
-            />
-          </div>
+          <LabelInput
+            type="text"
+            name="travel-location"
+            placeholder="Para onde você vai?"
+            icon={<MapPin className="size-5 text-zinc-400" />}
+            onChange={event => setDestination(event.target.value)}
+            value={destination}
+          />
         </div>
 
         <DayPicker locale={ptBR} mode="range"
           min={2} max={30}
           selected={rangeDates}
           onSelect={setRangeDates}
-
         />
+
         <Button variant="primary" size="full">
           Atualizar viagem
         </Button>

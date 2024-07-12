@@ -4,6 +4,7 @@ import { Button } from "../../components/button";
 import { api } from "../../lib/axios";
 import { useParams } from "react-router-dom";
 import { Modal } from "../../components/modal";
+import { LabelInput } from "../../components/label-input";
 
 interface CreateActivityModalProps {
   closeCreateActivityModal: () => void;
@@ -33,29 +34,19 @@ export function CreateActivityModal({closeCreateActivityModal} : CreateActivityM
         description={"Todos convidados podem visualizar as atividades."}
       >
         <form onSubmit={saveActivity} className="space-y-3">
-          <div className="h-14 px-4 bg-zinc-950 border border-zinc-800 rounded-lg flex items-center gap-2">
-            <Tag className="size-5 text-zinc-400"/>
-            <label htmlFor="travel-activity-title" className="sr-only">Qual a atividade?</label>
-            <input
-              type="text"
-              name="travel-activity-title"
-              id="travel-activity-title"
-              placeholder="Qual a atividade?"
-              className="bg-transparent text-lg placeholder-zinc-400 outline-none flex-1"
-            />
-          </div>
+          <LabelInput
+            type="text"
+            name="travel-activity-title"
+            placeholder="Qual a atividade?"
+            icon={<Tag className="size-5 text-zinc-400"/>}
+          />
 
-          <div className="h-14 flex-1 px-4 bg-zinc-950 border border-zinc-800 rounded-lg flex items-center gap-2">
-            <Calendar className="size-5 text-zinc-400"/>
-            <label htmlFor="travel-activity-datetime" className="sr-only">Data e horário da atividade</label>
-            <input
-              type="datetime-local"
-              name="travel-activity-datetime"
-              id="travel-activity-datetime"
-              placeholder="Data e horário da atividade"
-              className="bg-transparent text-lg placeholder-zinc-400 outline-none flex-1"
-            />
-          </div>
+          <LabelInput
+            type="datetime-local"
+            name="travel-activity-datetime"
+            placeholder="Data e horário da atividade"
+            icon={<Calendar className="size-5 text-zinc-400"/>}
+          />
 
           <Button type="submit" size="full">
             Salvar atividade
