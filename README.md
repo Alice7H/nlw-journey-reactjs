@@ -29,9 +29,9 @@ export default {
 - Opcionalmente adicione `plugin:@typescript-eslint/stylistic-type-checked`
 - Instale [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) e adicione `plugin:react/recommended` & `plugin:react/jsx-runtime` para a lista `extends`
 
-## Trip Planner
+## Trip Planner - Planejador de Viagem
 
-NLW Journey Frontend project - ReactJS by Rocketseat
+É um projeto da NLW Journey - Frontend usando ReactJS + Vite criado pela Rocketseat
 
 ### Aula 1
 
