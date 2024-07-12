@@ -7,6 +7,7 @@ const buttonVariants = tv({
     variant: {
       primary: "bg-lime-300 text-lime-950 hover:bg-lime-400",
       secondary: "bg-zinc-800 text-zinc-200 hover:bg-zinc-700",
+      tertiary: "bg-red-500 text-zinc-200 hover:bg-red-400",
     },
     size: {
       default: 'py-2',

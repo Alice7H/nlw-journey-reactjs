@@ -64,7 +64,7 @@ NLW Journey Frontend project - ReactJS by Rocketseat
     - Hook: useNavigate
 - Componentes
   - Button
-- Instalação do tailwind-variants
+- Instalação do tailwind-variants `npm install tailwind-variants`
 
 ### Aula 3
 
@@ -72,3 +72,11 @@ NLW Journey Frontend project - ReactJS by Rocketseat
 - Atualização da versão do nodejs
 - Instalação de dependências `npm install`
 - Inicialização do @prisma/client `npx prisma generate`
+- Instalação do para selecionar e formatar data `npm install react-day-picker date-fns`
+- Conceito de Lift state up ou elevar o state
+- Instalação do axios `npm i axios`
+
+### Tarefas Futuras
+
+- Responsividade
+- Validações
